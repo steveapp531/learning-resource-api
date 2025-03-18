@@ -1,6 +1,5 @@
 import LearningResource from "../models/learning-resource.js";
 
-// add a new learning resource
 
 export const addResource = async (req, res) => {
   try {
@@ -22,7 +21,7 @@ export const addResource = async (req, res) => {
   }
 };
 
-// Get all resources for the logged-in user
+
 export const getResources = async (req, res) => {
   try {
     const userId = req.user.id; 
@@ -34,7 +33,7 @@ export const getResources = async (req, res) => {
   }
 };
 
-// Delete a resource
+
 export const deleteResource = async (req, res) => {
   try {
     const { id } = req.params;
